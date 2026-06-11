@@ -190,7 +190,7 @@ export default function App() {
             </h1>
 
             <p className="text-sm sm:text-base lg:text-[16px] text-slate-200/95 mb-6 max-w-[85%] leading-relaxed font-display">
-              Join AMC College's Department of Biotechnology — offering B.Sc. and M.Sc. Biotechnology programs designed to bridge the gap between science and industry, with hands-on lab training and strong career support.
+              Join AMC College's Department of Biotechnology — offering <strong className="font-black text-white" id="bold-biotech-heading">B.Sc. and M.Sc. Biotechnology</strong> programs designed to bridge the gap between science and industry, with hands-on lab training and strong career support.
             </p>
 
             {/* Main highlights */}
@@ -442,7 +442,7 @@ export default function App() {
               isLight={true}
             />
             <StatCard 
-              value="30 Lakhs" 
+              value="33 Lakhs" 
               label={<>Per Annum<br />Highest Package</>} 
               icon={
                 <div className="relative w-14 h-14 flex items-center justify-center">
@@ -494,27 +494,7 @@ export default function App() {
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-4 tracking-tight font-display">Programs Offered</h2>
             <p className="text-lg lg:text-xl text-slate-300 font-medium">B.Sc. & M.Sc. Biotechnology — Science Meets Industry</p>
 
-            {/* Quick interactive filter pills */}
-            <div className="flex justify-center gap-3 mt-6">
-              <button 
-                onClick={() => setSelectedCourseCard('all')}
-                className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${selectedCourseCard === 'all' ? 'bg-[#FFD500] text-[#1a1b3a] shadow-md' : 'bg-[#1a1e3a] text-slate-300 hover:bg-slate-800'}`}
-              >
-                All Programs ({selectedCourseCard === 'all' ? '2' : 'Show All'})
-              </button>
-              <button 
-                onClick={() => setSelectedCourseCard('bsc')}
-                className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${selectedCourseCard === 'bsc' ? 'bg-[#FFD500] text-[#1a1b3a] shadow-md' : 'bg-[#1a1e3a] text-slate-300 hover:bg-slate-800'}`}
-              >
-                B.Sc. Undergraduate
-              </button>
-              <button 
-                onClick={() => setSelectedCourseCard('msc')}
-                className={`px-4 py-2 rounded-full text-xs font-bold transition-all ${selectedCourseCard === 'msc' ? 'bg-[#FFD500] text-[#1a1b3a] shadow-md' : 'bg-[#1a1e3a] text-slate-300 hover:bg-slate-800'}`}
-              >
-                M.Sc. Postgraduate
-              </button>
-            </div>
+
           </div>
 
           {/* Programs Container - Reference Style Outer Border */}
@@ -536,21 +516,21 @@ export default function App() {
 
                     <div className="flex flex-wrap items-start gap-6 lg:gap-10 mb-6 pt-5 mt-5 border-t border-indigo-900/40">
                       <div className="flex items-start gap-3">
-                        <div className="bg-indigo-950 p-2 rounded-lg mt-0.5 border border-indigo-500/20">
-                          <CalendarDays className="text-[#FFD500]" size={18} />
+                        <div className="bg-indigo-950 p-2.5 rounded-lg mt-0.5 border border-indigo-500/20">
+                          <CalendarDays className="text-[#FFD500]" size={20} />
                         </div>
                         <div>
-                          <p className="text-[10px] lg:text-[11px] uppercase font-black text-slate-400 tracking-wider mb-0.5">Duration</p>
-                          <p className="font-extrabold text-white text-sm">3 Years <span className="text-slate-400 font-medium">(6 Semesters)</span></p>
+                          <p className="text-[11px] lg:text-[12px] uppercase font-black text-slate-300 tracking-wider mb-1 animate-pulse">Duration</p>
+                          <p className="font-black text-white text-base lg:text-lg">3 Years <span className="text-[#FFD500] font-extrabold">(6 Semesters)</span></p>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
-                        <div className="bg-indigo-950 p-2 rounded-lg mt-0.5 border border-indigo-500/20">
-                          <GraduationCap className="text-[#FFD500]" size={18} />
+                        <div className="bg-indigo-950 p-2.5 rounded-lg mt-0.5 border border-indigo-500/20">
+                          <GraduationCap className="text-[#FFD500]" size={20} />
                         </div>
                         <div>
-                          <p className="text-[10px] lg:text-[11px] uppercase font-black text-slate-400 tracking-wider mb-0.5">Eligibility</p>
-                          <p className="font-extrabold text-white text-sm leading-snug">10+2 with Biology & Chemistry</p>
+                          <p className="text-[11px] lg:text-[12px] uppercase font-black text-slate-300 tracking-wider mb-1 animate-pulse">Eligibility</p>
+                          <p className="font-black text-white text-base lg:text-lg leading-snug">10+2 with Biology & Chemistry</p>
                         </div>
                       </div>
                     </div>
@@ -610,21 +590,21 @@ export default function App() {
 
                     <div className="flex flex-wrap items-start gap-6 lg:gap-10 mb-6 pt-5 mt-5 border-t border-indigo-900/40">
                       <div className="flex items-start gap-3">
-                        <div className="bg-indigo-950 p-2 rounded-lg mt-0.5 border border-indigo-500/20">
-                          <CalendarDays className="text-[#FFD500]" size={18} />
+                        <div className="bg-indigo-950 p-2.5 rounded-lg mt-0.5 border border-indigo-500/20">
+                          <CalendarDays className="text-[#FFD500]" size={20} />
                         </div>
                         <div>
-                          <p className="text-[10px] lg:text-[11px] uppercase font-black text-slate-400 tracking-wider mb-0.5">Duration</p>
-                          <p className="font-extrabold text-white text-sm">2 Years <span className="text-slate-400 font-medium">(4 Semesters)</span></p>
+                          <p className="text-[11px] lg:text-[12px] uppercase font-black text-slate-300 tracking-wider mb-1 animate-pulse">Duration</p>
+                          <p className="font-black text-white text-base lg:text-lg">2 Years <span className="text-[#FFD500] font-extrabold">(4 Semesters)</span></p>
                         </div>
                       </div>
                       <div className="flex items-start gap-3">
-                        <div className="bg-indigo-950 p-2 rounded-lg mt-0.5 border border-indigo-500/20">
-                          <GraduationCap className="text-[#FFD500]" size={18} />
+                        <div className="bg-indigo-950 p-2.5 rounded-lg mt-0.5 border border-indigo-500/20">
+                          <GraduationCap className="text-[#FFD500]" size={20} />
                         </div>
                         <div>
-                          <p className="text-[10px] lg:text-[11px] uppercase font-black text-slate-400 tracking-wider mb-0.5">Eligibility</p>
-                          <p className="font-extrabold text-white text-sm leading-snug">B.Sc. Biotechnology / Life Sciences, min. 50%</p>
+                          <p className="text-[11px] lg:text-[12px] uppercase font-black text-slate-300 tracking-wider mb-1 animate-pulse">Eligibility</p>
+                          <p className="font-black text-white text-base lg:text-lg leading-snug">B.Sc. Biotechnology / Life Sciences, min. 50%</p>
                         </div>
                       </div>
                     </div>
@@ -822,22 +802,6 @@ export default function App() {
             })}
           </div>
 
-          {/* Centered quote (as in reference image) */}
-          <div id="biotech-footer-quote" className="text-center mt-8 lg:mt-10 text-slate-500 font-medium italic text-xs tracking-tight border-y border-slate-100 py-4 max-w-xl mx-auto">
-            "Advancing state-of-the-art diagnostic, vaccine, and therapeutics engineering for a healthier tomorrow."
-          </div>
-
-          {/* Reference Footnotes Row */}
-          <div className="mt-8 flex flex-col sm:flex-row justify-between items-center gap-3 text-[10px] text-slate-400">
-            <div className="flex flex-wrap justify-center sm:justify-start gap-x-6 gap-y-1">
-              <span>[1-8] Indicates corresponding industry reference citation indices.</span>
-              <span>Affiliation & placement procedures align with standard company drives.</span>
-            </div>
-            <div className="text-slate-400 italic">
-              Source publications represent historical academic performance benchmarks.
-            </div>
-          </div>
-
         </div>
       </section>
 
@@ -900,7 +864,7 @@ export default function App() {
               
               <img 
                 referrerPolicy="no-referrer"
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                src="https://i.postimg.cc/rwyQR85Y/PMV08000.jpg" 
                 alt="Students working closely inside AMC laboratory" 
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
               />
@@ -1576,9 +1540,15 @@ function WhyBiotechItem({
 }
 
 function RecruiterCard({ imgSrc }: { imgSrc: string; key?: string | number }) {
+  const isSmallLogo = (imgSrc.includes('encrypted-tbn0.gstatic.com') || imgSrc.includes('tbn0') || imgSrc.includes('ANd9G')) && !imgSrc.includes('Qgq8yBSoWyphg2f');
   return (
-    <div className="shrink-0 bg-white rounded-lg shadow-[0_4px_12px_rgba(0,0,0,0.1)] p-4 w-[140px] h-[70px] lg:w-[180px] lg:h-[80px] flex items-center justify-center hover:shadow-lg transition-all cursor-default">
-      <img referrerPolicy="no-referrer" src={imgSrc} alt="Recruiter Logo Partner" className="max-h-full max-w-full object-contain mix-blend-multiply" />
+    <div className="shrink-0 bg-white rounded-xl shadow-[0_5px_15px_rgba(0,0,0,0.12)] p-2.5 w-[190px] h-[90px] lg:w-[250px] lg:h-[115px] flex items-center justify-center hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-default border border-slate-100 overflow-hidden">
+      <img 
+        referrerPolicy="no-referrer" 
+        src={imgSrc} 
+        alt="Recruiter Logo Partner" 
+        className={`max-h-[92%] max-w-[92%] object-contain mix-blend-multiply transition-transform duration-300 ${isSmallLogo ? 'scale-130 lg:scale-140' : ''}`} 
+      />
     </div>
   );
 }
