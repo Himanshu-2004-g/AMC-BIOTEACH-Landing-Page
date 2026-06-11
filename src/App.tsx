@@ -137,13 +137,13 @@ export default function App() {
           
           <div className="flex items-center gap-3 sm:gap-4 md:gap-6">
             <a 
-              href="tel:09902044113" 
+              href="tel:+919902044113" 
               className="flex items-center gap-2 text-[#1a1b3a] font-bold text-sm bg-slate-100 hover:bg-slate-200 px-4 py-2.5 rounded-full transition-colors duration-200"
               title="Call Admissions Office"
             >
               <Phone size={15} className="text-[#1a1b3a] animate-swing" />
               <span className="hidden sm:inline">Admissions:</span>
-              <span>099020 44113</span>
+              <span>+91 99020 44113</span>
             </a>
             
             <div className="hidden lg:block border-l border-slate-200 h-8"></div>
